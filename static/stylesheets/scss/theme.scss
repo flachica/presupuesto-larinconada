@@ -1,0 +1,71 @@
+@import "theme-variables";
+
+header{
+  background: $brand-primary;
+}
+
+.navbar-brand {
+  font-size: 2.5em;
+  margin: 0;
+
+  a{
+    color: white;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    text-align: right;
+    padding-right: 15px;
+  }
+}
+
+.home-content .options .option>div .icon{
+  color: $brand-secondary;
+  opacity: 0.5;
+}
+
+.home-content .options .option>div .btn{
+  border-color: $brand-secondary;
+  background: $brand-secondary;
+
+  &:hover{
+    border-color: $brand-primary;
+    background: $brand-primary;
+  }
+}
+
+#menu-lang ul li input[type="submit"]{
+  color: white;
+}
+
+.popover-id {
+  line-height:1.125em;
+  text-align:center;
+  margin-bottom:0;
+  padding:10px 15px 5px;
+  color: black;
+}
+
+.main-entity-logo a {
+    height: 110px;
+}
+
+.main-entity-logo {
+    margin: 10px auto;
+}
+
+.link-lrssp {
+    width: 46px;
+    height: 30px;
+    background-image: url(../assets/logo-lrssp.png);
+}
+
+#pattern-budget{
+  rect{
+    fill: $sankey-income-color-light;
+  }
+}
+#pattern-executed{
+  rect{
+    fill: $sankey-expense-color-light;
+  }
+}
